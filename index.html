@@ -1,25 +1,63 @@
-<!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | mini game</title>
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="TemplateData/style.css">
-    <script src="TemplateData/UnityProgress.js"></script>  
-    <script src="Build/UnityLoader.js"></script>
-    <script>
-      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Website.json", {onProgress: UnityProgress});
-    </script>
-  </head>
-  <body>
-    <div class="webgl-content">
-      <div id="gameContainer" style="width: 960px; height: 600px"></div>
-      <div class="footer">
-        <div class="webgl-logo"></div>
-        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
-        <div class="title">mini game</div>
-      </div>
-    </div>
-  </body>
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Lord of the Mandu</title>
+  <meta name="description" content="Beware of the Mandu king's power as he shall post video games">
+  <meta name="author" content="Mandutopia">
+
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="pure-min.css">
+  <link rel="stylesheet" href="pricing.css">
+
+</head>
+
+<body>
+<div class="banner">
+    <h1 class="banner-head">
+        Mandu King's Library of Games
+    </h1>
+</div>
+
+<div class="l-content">
+    <div class="pricing-tables pure-g">
+        <div class="pure-u-1 pure-u-md-1-2">
+            <div class="pricing-table pricing-table-free">
+                <div class="pricing-table-header">
+                    <h2>Jumpling</h2>
+                </div>
+
+                <ul class="pricing-table-list">
+                  <li>Objective: Avoid the obstacles and get the lowest attempts.</li>
+                    <li>Controls:</li>
+                    <li>Jump - w</li>
+                </ul>
+
+                <button class="button-choose pure-button" onclick="location.href='jumpling/index.html'">Play</button>
+            </div>
+        </div>
+
+        <div class="pure-u-1 pure-u-md-1-2">
+            <div class="pricing-table pricing-table-free">
+                <div class="pricing-table-header">
+                    <h2>Survival Shooter</h2>
+                </div>
+
+                <ul class="pricing-table-list">
+                    <li>Objective: Avoid and MURDER the enemies.</li>
+                    <li>Controls:</li>
+                    <li>Movement - W, A, S, D</li>
+                    <li>Shoot - left click</li>
+                </ul>
+
+                <button class="button-choose pure-button" onclick="location.href='survival_shooter/index.html'">Play</button>
+            </div>
+        </div>
+    </div> <!-- end pricing-tables -->
+</div> <!-- end l-content -->
+
+
+</body>
 </html>
